@@ -44,7 +44,7 @@ highlightjs_theme: "monokai-sublime"
 #    tag: '/tag/:name/'
 
 # Disqus comments
- #disqus_shortname: conchiholic
+ disqus_shortname: kingconchi
 
 # Google analytics
 ga_tracking_id: "UA-103804259-1"
