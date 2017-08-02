@@ -54,6 +54,8 @@ descriptions:
   - cat: windows
     desc: "windows! "
 
+  - cat: Dummy
+    desc: "물꼬기의 수상한 malware일지"
 # Social icons and sharing options
 #
 # Social settings are used in two places:
