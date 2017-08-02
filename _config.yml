@@ -9,17 +9,17 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Centrarium
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
-email: blcentra@gmail.com
-name: Ben Centra
+title: 수상한 물꼬기의 수상한 블로그
+subtitle: "이건 아주 뽀끔뽀끔 하다구!"
+email: conchiholic@gmail.com
+name: conchiholic
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  Welcome to conchi world :D
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
-baseurl: "/centrarium" # the subpath of your site, e.g. /blog/
-url: "http://bencentra.github.io" # the base hostname & protocol for your site
+baseurl: "/conchiholic.github.io" # the subpath of your site, e.g. /blog/
+url: "https://conchiholic.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
@@ -53,6 +53,10 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+  - cat: conchi
+    desc: "conchi 아무말대잔치"
+
 
 # Social icons and sharing options
 #
