@@ -30,6 +30,9 @@ paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
 
+# Google analytics
+#google_analytics_id : "UA-103804259-1"
+
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 #jekyll-archives:
 #  enabled:
@@ -44,7 +47,7 @@ highlightjs_theme: "monokai-sublime"
 # disqus_shortname: bencentra
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-103804259-1"
 
 # Category descriptions (for archive pages)
 #descriptions:
