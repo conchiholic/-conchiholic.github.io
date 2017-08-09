@@ -11,6 +11,8 @@ categories: Malware Analysis
 [2017-08-10 1:50]  
 - %SystemRoot%\\system32\\svchost.exe -k [생성되는dll]  요 녀석에 대한  
 설명이 수정되었습니다 :D 피드백 감사합니다 'ㅅ'//   
+- rundll32.exe가 아닌 다른 방법으로도 원하는 export 함수를 호출할 수 있는   
+다양한 방법들에 대한 피드백 감사합니다 'ㅅ'//     
 
 - - -
 
