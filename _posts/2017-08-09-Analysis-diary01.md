@@ -3,8 +3,16 @@ layout: post
 title: "물꼬기의 수상한 Analysis 일지 01 - 3.4 DDoS(1)"
 date: 2017-08-09
 author: conchi
-categories: Malware Analysis
+categories: Malware, Analysis
 ---
+
+**+) 수정내역**   
+
+[2017-08-10 1:50]  
+- %SystemRoot%\\system32\\svchost.exe -k [생성되는dll]  요 녀석에 대한  
+설명이 수정되었습니다 :D 피드백 감사합니다 'ㅅ'//   
+
+- - -
 
 쟈란쟈란!    
 오늘부터는 지난번에 소개했던 사건사고들에 사용되었던    
@@ -43,7 +51,7 @@ DLL이 가지고 있는 특성상 export table을 먼저 확인하였다.
 역시나 DllEntryPoint가 존재했고, 조금 특이하게 StartInstall이라는 부분이 보였다.   
 이 둘을 중점으로 분석하기 시작했다.  
 
-![6](/assets/ana01/06.jpg)  
+![6](/assets/ana01/06.jpg)   
 <br>
 
 는 DllEntryPoint는 IDA가 잡아준듯.. 원래는 StartInstall 하나밖에 없나봉가.. 'ㅅ'a...  
@@ -94,9 +102,8 @@ dll을 생성하는것으로 추측되는 함수로 들어가면   `SystemRoot\S
 `SYSTEM\CurrentControlSet\Services` 레지스트리에 서비스로 등록시킨다. *골때린다진짜.*     
 <br>
 
-여기에서 ``%SystemRoot%\\system32\\svchost.exe -k [생성되는dll]``   
-이런 부분도 볼 수 있는데 하도 궁금해서 찾아보니 부팅 시 해당 dll이 실행된다는 의미인듯 하다.   
-서비스로 등록시켜 만수무강시키겠다는 악성코드 제작자의 장수 의지가 엿보이는 부분이다.   
+여기에서 ``%SystemRoot%\\system32\\svchost.exe -k [생성되는dll]`` 이 부분은   
+서비스로 실행하여 만수무강시키겠다는 악성코드 제작자의 장수 의지가 엿보이는 부분이다.   
 지난 7.7 DDoS 샘플에서도 본인을 Service에 등록시키는 모습을 봤었던것 같은데...   
 생존본능이란 이런건가 싶기도 하다.  
 <br>
@@ -150,5 +157,7 @@ host.dll이라는 이름이 아니고 nt모시기 저시기인놈도 있으니 �
 +) host.dll의 StartInstall은  ollydbg에 기본적으로 로드되어있는 dll로더로 로드가 되지 않더이다.. ㅜㅜ..  
 (계속 DllMain이 있는곳으로 로드되어버림 ㅜㅜ..)  
 그래서 rundll32.exe에 붙여서 강제로 StartInstall을 로드시켰당.  
+> rundll32.exe를 이용하지 않고 원하는 부분으로 이동할 수 있는 방법은 여러가지가 존재한다고 한다.  
+(페북 댓글을  참고할것! - 이 부분에 대한 조언 감사합니다 :D )
 
 딩딩 수고링 'ㅅ'/  
