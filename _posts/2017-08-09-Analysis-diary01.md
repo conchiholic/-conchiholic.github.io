@@ -3,7 +3,7 @@ layout: post
 title: "물꼬기의 수상한 Analysis 일지 01 - 3.4 DDoS(1)"
 date: 2017-08-09
 author: conchi
-categories: Malware, Analysis
+categories: Malware Analysis
 ---
 
 쟈란쟈란!    
